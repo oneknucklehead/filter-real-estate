@@ -1,0 +1,28 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.home-wrapper,
+.filter-aside,
+.list-aside {
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.home-wrapper {
+  display: flex;
+  flex: 1;
+  /* for edge and IE */
+  -ms-overflow-style: none;
+  /* for mozilla  */
+  scrollbar-width: none;
+}
+.filter-aside {
+  flex-basis: 250px;
+}
+.list-aside {
+  flex: 1;
+}
