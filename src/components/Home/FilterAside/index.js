@@ -2,11 +2,14 @@ import React from 'react'
 import FilterListToggle from '../../common/FilterListToggle'
 import { categoryList, ratingList } from '../../../constants'
 import './styles.css'
+import SliderProton from '../../common/SliderProton'
 const FilterAside = ({
   selectedCategory,
   selectToggle,
   selectedRating,
   selectRating,
+  changedPrice,
+  selectedPrice,
 }) => {
   return (
     <>
@@ -21,8 +24,12 @@ const FilterAside = ({
           vertical={true}
         />
       </div>
-
       {/* Price range */}
+      <div className='input-group'>
+        <p className='label-range'>Price:</p>
+        <SliderProton value={selectedPrice} changedPrice={changedPrice} />
+      </div>
+      {/* move in date */}
       <div className='input-group'>
         <p className='label'>Stars:</p>
         <FilterListToggle
@@ -32,7 +39,6 @@ const FilterAside = ({
           vertical={false}
         />
       </div>
-      {/* move in date */}
 
       {/* additional star rating */}
     </>

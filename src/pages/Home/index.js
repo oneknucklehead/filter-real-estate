@@ -7,11 +7,15 @@ import './styles.css'
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState()
   const [selectedRating, setSelectedRating] = useState()
+  const [selectedPrice, setSelectedPrice] = useState([1000, 5000])
   const handleSelectCategory = (event, value) => {
     return !value ? null : setSelectedCategory(value)
   }
   const handleSelectRating = (event, value) => {
     return !value ? null : setSelectedRating(value)
+  }
+  const handleChangedPrice = (event, value) => {
+    return setSelectedPrice(value)
   }
   return (
     <div className='home'>
@@ -25,6 +29,8 @@ const Home = () => {
             selectedCategory={selectedCategory}
             selectRating={handleSelectRating}
             selectedRating={selectedRating}
+            selectedPrice={selectedPrice}
+            changedPrice={handleChangedPrice}
           />
         </div>
         <div className='list-aside'>
