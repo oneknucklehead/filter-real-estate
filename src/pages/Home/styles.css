@@ -21,8 +21,10 @@
   scrollbar-width: none;
 }
 .filter-aside {
-  flex-basis: 250px;
+  flex-basis: 300px;
+  padding: 1rem;
 }
 .list-aside {
   flex: 1;
+  padding: 1rem;
 }
