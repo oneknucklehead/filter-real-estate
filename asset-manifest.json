@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/filter-real-estate/static/css/main.ebe5200d.css",
+    "main.js": "/filter-real-estate/static/js/main.7d141aa6.js",
+    "index.html": "/filter-real-estate/index.html",
+    "main.ebe5200d.css.map": "/filter-real-estate/static/css/main.ebe5200d.css.map",
+    "main.7d141aa6.js.map": "/filter-real-estate/static/js/main.7d141aa6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebe5200d.css",
+    "static/js/main.7d141aa6.js"
+  ]
+}
