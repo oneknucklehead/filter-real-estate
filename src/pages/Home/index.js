@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import FilterAside from '../../components/Home/FilterAside'
 import SearchBar from '../../components/Home/SearchBar'
 import Lists from '../../components/Home/Lists'
+import { dataList } from '../../constants'
 import './styles.css'
 
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState()
   const [selectedRating, setSelectedRating] = useState()
   const [selectedPrice, setSelectedPrice] = useState([1000, 5000])
+  const [lists, setLists] = useState(dataList)
   const handleSelectCategory = (event, value) => {
     return !value ? null : setSelectedCategory(value)
   }
@@ -35,7 +37,7 @@ const Home = () => {
         </div>
         <div className='list-aside'>
           {/* list of properties & empty view*/}
-          <Lists />
+          <Lists lists={lists} />
         </div>
       </div>
     </div>
