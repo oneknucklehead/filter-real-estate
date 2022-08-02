@@ -66,7 +66,6 @@ const FilterListToggle = ({ value, options, selectToggle, vertical }) => {
           </ToggleButton>
         ))}
       </ToggleButtonGroup>
-      <Button />
     </>
   )
 }

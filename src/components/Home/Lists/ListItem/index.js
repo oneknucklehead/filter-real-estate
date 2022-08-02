@@ -19,11 +19,15 @@ const ListItem = ({ item }) => {
             <span className='icon'>
               <VerifiedIcon />
             </span>
-            <h4> {item.title}</h4>
+            <h4>
+              {' '}
+              {item.title}, <span className='location'>{item.location}</span>
+            </h4>
           </div>
           <span>🌟{item.rating}</span>
         </header>
         <hr></hr>
+
         <footer>
           <p>
             <span className='icon2'>

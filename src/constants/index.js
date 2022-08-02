@@ -54,6 +54,7 @@ export const dataList = [
     id: 1,
     title: 'lounge resort',
     category: 'resort',
+    location: 'New York',
     rating: 5,
     price: 1200,
     space: 205.2,
@@ -66,6 +67,8 @@ export const dataList = [
     id: 2,
     title: 'Faulkner Avenue',
     category: 'bungalow',
+    location: 'London',
+
     rating: 4.5,
     price: 4550,
     space: 168.9,
@@ -77,6 +80,8 @@ export const dataList = [
     id: 3,
     title: 'Palm Harbor',
     category: 'bungalow',
+    location: 'America',
+
     rating: 4,
     space: 145.7,
     rooms: 3,
@@ -88,6 +93,8 @@ export const dataList = [
     id: 4,
     title: 'JW mariott',
     category: 'hotel',
+    location: 'India',
+
     rating: 4,
     space: 300,
     rooms: 2,
@@ -99,6 +106,8 @@ export const dataList = [
     id: 5,
     title: 'beverly springfield',
     category: 'house',
+    location: 'Sweden',
+
     rating: 3.5,
     space: 405.2,
     rooms: 3,
@@ -110,6 +119,8 @@ export const dataList = [
     id: 6,
     title: "The ahmed's",
     category: 'house',
+    location: 'Ireland',
+
     rating: 5,
     space: 1000,
     rooms: 4,

@@ -10,6 +10,7 @@ const FilterAside = ({
   selectRating,
   changedPrice,
   selectedPrice,
+  clearSelections,
 }) => {
   return (
     <>
@@ -39,7 +40,9 @@ const FilterAside = ({
           vertical={false}
         />
       </div>
-
+      <button className='btn' onClick={clearSelections}>
+        Clear Selection
+      </button>
       {/* additional star rating */}
     </>
   )
