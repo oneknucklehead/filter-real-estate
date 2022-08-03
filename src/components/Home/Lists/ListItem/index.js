@@ -8,7 +8,7 @@ const ListItem = ({ item }) => {
   return (
     <div className='listItem-wrap'>
       <div className='card'>
-        <img src={item.coverSrc} alt={item.title} />
+        <img src={process.env.PUBLIC_URL + item.coverSrc} alt={item.title} />
         <p className='price'>
           ${item.price}
           <span>/month</span>

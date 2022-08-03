@@ -4,12 +4,14 @@ import SearchBar from '../../components/Home/SearchBar'
 import Lists from '../../components/Home/Lists'
 import { dataList } from '../../constants'
 import './styles.css'
+import EmptyView from '../../components/common/EmptyView'
 
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState()
   const [selectedRating, setSelectedRating] = useState()
   const [inputSearch, setInputSearch] = useState()
   const [selectedPrice, setSelectedPrice] = useState([1000, 6000])
+  const [resultFound, setResultFound] = useState()
   const [lists, setLists] = useState(dataList)
   const handleSelectCategory = (event, value) => {
     return !value ? null : setSelectedCategory(value)
@@ -55,6 +57,7 @@ const Home = () => {
     }
 
     setLists(updatedList)
+    !updatedList.length ? setResultFound(false) : setResultFound(true)
   }
   const clearSelections = () => {
     setSelectedCategory('')
@@ -86,7 +89,7 @@ const Home = () => {
         </div>
         <div className='list-aside'>
           {/* list of properties & empty view*/}
-          <Lists lists={lists} />
+          {resultFound ? <Lists lists={lists} /> : <EmptyView />}
         </div>
       </div>
     </div>

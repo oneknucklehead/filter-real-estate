@@ -1,5 +1,5 @@
 import { Search } from '@mui/icons-material'
-import React, { useState } from 'react'
+import React from 'react'
 import './styles.css'
 const SearchBar = ({ value, changeInput }) => {
   return (

@@ -1,4 +1,4 @@
-import { Button, ToggleButton, ToggleButtonGroup } from '@mui/material'
+import { ToggleButton, ToggleButtonGroup } from '@mui/material'
 import React from 'react'
 
 const FilterListToggle = ({ value, options, selectToggle, vertical }) => {
